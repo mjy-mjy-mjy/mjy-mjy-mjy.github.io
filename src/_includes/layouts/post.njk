@@ -1,0 +1,59 @@
+---
+layout: layouts/base.njk
+---
+<article class="post">
+  <header class="post-hero">
+    <div class="shell post-hero__inner">
+      <a class="post-hero__back" href="/">← 返回首页</a>
+      <p class="eyebrow">TECHNICAL ESSAY</p>
+      <h1>{{ title }}</h1>
+      <p class="post-hero__description">{{ description }}</p>
+      <div class="post-meta">
+        <span>发布于 <time datetime="{{ date | dateIso }}">{{ date | dateDisplay }}</time></span>
+        {% if updated %}<span>更新于 <time datetime="{{ updated | dateIso }}">{{ updated | dateDisplay }}</time></span>{% endif %}
+        <span>{{ content | readingTime }} 分钟阅读</span>
+      </div>
+      <ul class="tag-list">
+        {% for tag in tags %}{% if tag != "posts" %}<li><a href="/tags/#{{ tag }}"># {{ tag }}</a></li>{% endif %}{% endfor %}
+      </ul>
+    </div>
+  </header>
+
+  <div class="shell post-layout">
+    <div class="post-content prose">
+      <nav class="post-toc--mobile" aria-label="移动端文章目录">{{ content | toc | safe }}</nav>
+      {{ content | safe }}
+    </div>
+    <aside class="post-aside" aria-label="桌面端文章目录">
+      {{ content | toc | safe }}
+    </aside>
+  </div>
+
+  {% set newer = collections.posts | newerPost(page.url) %}
+  {% set older = collections.posts | olderPost(page.url) %}
+  <nav class="shell post-navigation" aria-label="上一篇与下一篇">
+    {% if newer %}
+      <a href="{{ newer.url }}"><span>上一篇 · 较新</span><strong>{{ newer.data.title }}</strong></a>
+    {% else %}
+      <span class="post-navigation__empty"><span>上一篇 · 较新</span><strong>已经是最新文章</strong></span>
+    {% endif %}
+    {% if older %}
+      <a href="{{ older.url }}"><span>下一篇 · 较早</span><strong>{{ older.data.title }}</strong></a>
+    {% else %}
+      <span class="post-navigation__empty"><span>下一篇 · 较早</span><strong>暂无更早文章</strong></span>
+    {% endif %}
+  </nav>
+</article>
+<script src="/assets/vendor/mermaid.min.js"></script>
+<script>
+  const diagrams = document.querySelectorAll(".mermaid");
+  if (diagrams.length) {
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "strict",
+      theme: document.documentElement.dataset.theme === "dark" ? "dark" : "neutral",
+      flowchart: { curve: "basis", htmlLabels: false }
+    });
+    mermaid.run({ nodes: diagrams });
+  }
+</script>
