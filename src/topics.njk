@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+title: 专题
+description: 按长期学习路径整理文章，而不只是按发布时间浏览。
+permalink: /topics/
+---
+<section class="page-hero topics-hero">
+  <div class="shell page-hero__inner">
+    <p class="eyebrow">KNOWLEDGE PATHS</p>
+    <h1>专题</h1>
+    <p>按长期问题和学习路径组织内容。每个专题都会随着实践推进持续补充和修订。</p>
+  </div>
+</section>
+
+<section class="topics-page">
+  <div class="shell">
+    <div class="topic-grid topic-grid--page">
+      {% for topic in site.topics %}
+        <article class="topic-card topic-card--large">
+          <div class="topic-card__top">
+            <span>PATH 0{{ loop.index }}</span>
+            <span>{{ topic.status }}</span>
+          </div>
+          <h2>{{ topic.title }}</h2>
+          <p>{{ topic.description }}</p>
+          <div class="topic-card__footer">
+            <span># {{ topic.tag }}</span>
+            <a class="text-link" href="/tags/#{{ topic.tag }}">查看相关文章 <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <aside class="topics-principle">
+      <p class="eyebrow">HOW IT GROWS</p>
+      <h2>专题会如何持续生长</h2>
+      <div class="topics-principle__steps">
+        <div><span>01</span><strong>提出问题</strong><p>从真实需求或困惑开始，而不是先堆砌概念。</p></div>
+        <div><span>02</span><strong>建立理解</strong><p>梳理背景、边界、实现方式和工程取舍。</p></div>
+        <div><span>03</span><strong>实践修订</strong><p>用项目和反馈验证，再持续修正已有文章。</p></div>
+      </div>
+    </aside>
+  </div>
+</section>
