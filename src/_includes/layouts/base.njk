@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}" data-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#0b1220">
+    <title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script>
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = saved || (dark ? "dark" : "light");
+      })();
+    </script>
+  </head>
+  <body data-search-index="/search.json">
+    <a class="skip-link" href="#main-content">跳到正文</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="site-header" data-header>
+      <div class="shell site-header__inner">
+        <a class="brand" href="/" aria-label="{{ site.title }}首页">
+          <span class="brand__mark" aria-hidden="true">沐</span>
+          <span>{{ site.title }}</span>
+        </a>
+        <button class="icon-button nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+          <span class="sr-only">打开导航</span>
+          <span class="nav-toggle__lines" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="主导航" data-nav>
+          {% for item in site.navigation %}
+            <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+          {% endfor %}
+          <span class="site-nav__actions">
+            <button class="icon-button" type="button" data-search-open aria-label="打开站内搜索" title="搜索（/）">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+            </button>
+            <button class="icon-button" type="button" data-theme-toggle aria-label="切换深色模式" title="切换主题">
+              <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3V1m0 22v-2m9-9h2M1 12h2m16.36-6.36 1.42-1.42M3.22 20.78l1.42-1.42m14.72 0 1.42 1.42M3.22 3.22l1.42 1.42M17 12a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"/></svg>
+              <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15.2A9 9 0 1 1 8.8 3 7 7 0 0 0 21 15.2Z"/></svg>
+            </button>
+          </span>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <div>
+          <a class="site-footer__title" href="/">{{ site.title }}</a>
+          <p>{{ site.subtitle }}</p>
+        </div>
+        <div class="site-footer__meta">
+          {% if site.githubUrl %}
+            <a href="{{ site.githubUrl }}" rel="me noopener" target="_blank">GitHub</a>
+          {% else %}
+            <span>GitHub 入口待补充</span>
+          {% endif %}
+          <span>© {% currentYear %} {{ site.title }}</span>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="search-dialog" data-search-dialog aria-labelledby="search-title">
+      <div class="search-panel">
+        <div class="search-panel__head">
+          <div>
+            <p class="eyebrow">SEARCH</p>
+            <h2 id="search-title">搜索文章</h2>
+          </div>
+          <button class="icon-button" type="button" data-search-close aria-label="关闭搜索">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+        <label class="search-input">
+          <span class="sr-only">搜索关键词</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+          <input type="search" placeholder="输入标题、摘要、正文或标签…" autocomplete="off" data-search-input>
+          <kbd>/</kbd>
+        </label>
+        <p class="search-status" data-search-status>输入关键词开始搜索</p>
+        <div class="search-results" data-search-results></div>
+      </div>
+    </dialog>
+
+    <button class="back-to-top" type="button" data-back-to-top aria-label="返回顶部">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
+    </button>
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>

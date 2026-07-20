@@ -1,0 +1,33 @@
+---
+layout: layouts/page.njk
+title: 文章标签
+eyebrow: TOPICS
+description: 从主题进入文章，沿着概念之间的联系继续阅读。
+permalink: /tags/index.html
+---
+<nav class="tag-cloud" aria-label="全部标签">
+  {% for tag in collections.tagList %}
+    <a href="#{{ tag }}"># {{ tag }} <span>{{ collections[tag].length }}</span></a>
+  {% endfor %}
+</nav>
+
+<div class="tag-groups">
+  {% for tag in collections.tagList %}
+    <section class="tag-group" id="{{ tag }}">
+      <header>
+        <p class="eyebrow">TOPIC</p>
+        <h2># {{ tag }}</h2>
+      </header>
+      <ol>
+        {% for post in collections[tag] | reverse %}
+          <li>
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+            <time datetime="{{ post.date | dateIso }}">{{ post.date | dateDisplay }}</time>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+  {% else %}
+    <p>暂无标签。</p>
+  {% endfor %}
+</div>
