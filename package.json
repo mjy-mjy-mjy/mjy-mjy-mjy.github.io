@@ -8,7 +8,8 @@
     "dev": "eleventy --serve",
     "build": "eleventy",
     "check": "node scripts/check-site.mjs",
-    "test": "npm run build && npm run check"
+    "check:blog-skill": "node --check skills/mujian-blog-publisher/scripts/validate-post.mjs && node --check skills/mujian-blog-publisher/scripts/validate-assets.mjs",
+    "test": "npm run build && npm run check && npm run check:blog-skill"
   },
   "engines": {
     "node": ">=22 <25"
