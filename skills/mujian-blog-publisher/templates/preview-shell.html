@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} · 沐简的博客预览</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --text: #182033;
+      --soft: #5e6a7f;
+      --line: #e3e8ef;
+      --accent: #246fe5;
+      --accent-soft: #eef5ff;
+      --shadow: 0 18px 60px rgba(25, 38, 60, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.85;
+    }
+    header {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.88);
+      backdrop-filter: blur(16px);
+    }
+    header div {
+      display: flex;
+      max-width: 1180px;
+      padding: 14px 24px;
+      margin: auto;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .status {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+    }
+    main {
+      width: min(780px, calc(100% - 32px));
+      padding: 58px 0 90px;
+      margin: auto;
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.15;
+      letter-spacing: -.045em;
+    }
+    .lead { color: var(--soft); font-size: 19px; }
+    .notice {
+      padding: 18px 20px;
+      margin: 30px 0;
+      border: 1px solid #f4d49b;
+      border-radius: 14px;
+      background: #fff7e8;
+      color: #6d4c12;
+    }
+    h2 { margin: 64px 0 22px; font-size: 30px; line-height: 1.35; }
+    p { margin: 0 0 22px; }
+    blockquote {
+      padding: 22px 24px;
+      margin: 28px 0;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 14px 14px 0;
+      background: var(--accent-soft);
+      color: #32445f;
+    }
+    figure { margin: 42px 0; }
+    figure img {
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    figcaption { margin-top: 12px; color: #7a8698; font-size: 14px; text-align: center; }
+    pre { padding: 22px; overflow: auto; border-radius: 16px; background: #101722; color: #dfe8f6; }
+    table { width: 100%; margin: 30px 0; overflow: hidden; border-collapse: collapse; border-radius: 16px; background: var(--surface); }
+    th, td { padding: 15px 17px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: #f1f5fa; }
+    @media (max-width: 640px) {
+      main { padding-top: 36px; }
+      h2 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <strong>沐简的博客 · 独立预览</strong>
+      <span class="status">未上传博客</span>
+    </div>
+  </header>
+  <main>
+    <h1>{{TITLE}}</h1>
+    <p class="lead">{{DESCRIPTION}}</p>
+    <div class="notice">这是独立视觉预览。正式页面将沿用博客现有导航、文章标题区、目录、深色模式和页脚。</div>
+    {{ARTICLE_HTML}}
+  </main>
+</body>
+</html>
