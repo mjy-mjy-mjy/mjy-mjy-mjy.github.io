@@ -50,27 +50,6 @@ export default function (eleventyConfig) {
     slugify: (value) =>
       "section-" + createHash("sha1").update(value).digest("hex").slice(0, 12)
   });
-
-  const defaultFence = markdown.renderer.rules.fence;
-  markdown.renderer.rules.fence = (tokens, index, options, env, self) => {
-    const token = tokens[index];
-    const language = token.info.trim().split(/\s+/)[0].toLowerCase();
-
-    if (language === "mermaid") {
-      const source = markdown.utils.escapeHtml(token.content.trim());
-      return `<figure class="mermaid-figure"><div class="mermaid">${source}</div></figure>\n`;
-    }
-
-    if (defaultFence) {
-      return defaultFence(tokens, index, options, env, self);
-    }
-
-    const className = language
-      ? ` class="language-${markdown.utils.escapeHtml(language)}"`
-      : "";
-    return `<pre><code${className}>${markdown.utils.escapeHtml(token.content)}</code></pre>\n`;
-  };
-
   eleventyConfig.setLibrary("md", markdown);
 
   eleventyConfig.addCollection("posts", (collectionApi) =>
