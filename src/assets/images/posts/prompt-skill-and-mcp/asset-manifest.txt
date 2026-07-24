@@ -1,3 +1,0 @@
-ai-agent-workbench.svg
-concept-responsibilities.svg
-mcp-tool-workbench.svg
