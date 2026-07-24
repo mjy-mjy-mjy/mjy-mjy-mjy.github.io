@@ -14,6 +14,18 @@ tags:
   - MCP
 ---
 
+<figure class="post-figure post-figure--hero">
+  <img
+    src="/assets/images/posts/prompt-skill-and-mcp/ai-agent-workbench.svg"
+    alt="开发者通过 AI Agent、GitHub、终端和任务工具构建浏览器端 ToDo 项目"
+    width="1400"
+    height="430"
+    loading="eager"
+    fetchpriority="high"
+  >
+  <figcaption>当 AI 开始参与真实项目，任务表达、方法复用、工具连接和执行流程会同时影响最终结果。</figcaption>
+</figure>
+
 在讨论 AI Agent 时，Prompt、Skill、MCP 和 Workflow 经常会一起出现。
 
 它们看起来都在做同一件事：扩展模型的能力，让 AI 可以完成更复杂的任务。于是很容易形成一种模糊的理解：Prompt 是给模型下指令，Skill 是一段更长、更专业的 Prompt，MCP 是给 Agent 安装工具，Workflow 则是把这些东西串联起来。
@@ -22,13 +34,16 @@ tags:
 
 Prompt、Skill 和 MCP 并不是三种互相替代的技术，也不存在简单的高低之分。它们位于 Agent 系统的不同层级，各自填补不同的缺口。
 
-```mermaid
-flowchart LR
-    A["Prompt<br/>定义当前任务"] --> B["Skill<br/>提供可复用方法"]
-    B --> C["MCP / Tools<br/>连接外部能力"]
-    C --> D["Workflow<br/>组织执行过程"]
-    D --> E["可验证的任务结果"]
-```
+<figure class="post-figure">
+  <img
+    src="/assets/images/posts/prompt-skill-and-mcp/concept-responsibilities.svg"
+    alt="Prompt、Skill、MCP 和 Workflow 围绕浏览器端 ToDo 任务的职责分工"
+    width="1400"
+    height="820"
+    loading="lazy"
+  >
+  <figcaption>四者不是替代或升级关系，而是围绕同一个任务承担不同职责。</figcaption>
+</figure>
 
 可以先用一句话概括：
 
@@ -125,20 +140,16 @@ Skill 保存的是多次任务之间相对稳定的方法：
 
 MCP，也就是 Model Context Protocol，可以理解为 AI 应用与外部数据、工具和系统之间的一种标准化连接方式。通过 MCP 或其他工具接口，Agent 可以获得读取文件、查询数据库、搜索网页、操作 GitHub、运行命令等能力。
 
-在 ToDo 项目的场景中，Agent 可能需要连接这些外部能力：
-
-```mermaid
-flowchart TB
-    A["Agent"] --> B["文件系统"]
-    A --> C["GitHub 仓库"]
-    A --> D["终端和构建工具"]
-    A --> E["浏览器测试工具"]
-
-    B --> F["读取和修改代码"]
-    C --> G["创建分支与 Pull Request"]
-    D --> H["运行构建和测试"]
-    E --> I["检查页面与交互"]
-```
+<figure class="post-figure">
+  <img
+    src="/assets/images/posts/prompt-skill-and-mcp/mcp-tool-workbench.svg"
+    alt="Agent 通过文件系统、GitHub、终端和浏览器测试工具进入真实项目"
+    width="1400"
+    height="820"
+    loading="lazy"
+  >
+  <figcaption>MCP 所在的是连接层：它让 Agent 能够读取真实信息、执行真实操作并检查真实结果。</figcaption>
+</figure>
 
 这些能力让模型不再只是描述应该怎样修改，而是可以进入真实项目中执行操作。
 
@@ -164,21 +175,45 @@ flowchart TB
 
 因为开发一个 ToDo 工具并不是一次模型回答，而是多个前后关联的步骤。
 
-```mermaid
-flowchart TD
-    A["读取现有项目"] --> B["确认需求和约束"]
-    B --> C["分析数据结构"]
-    C --> D["制定修改方案"]
-    D --> E["修改代码"]
-    E --> F["运行构建"]
-    F --> G{"构建是否通过"}
-    G -- "否" --> H["读取错误并修复"]
-    H --> F
-    G -- "是" --> I["检查主要交互"]
-    I --> J{"是否破坏原有功能"}
-    J -- "是" --> D
-    J -- "否" --> K["提交分支并创建 PR"]
-```
+<div class="article-steps">
+  <div class="article-step">
+    <span class="article-step__number">01</span>
+    <strong>读取现有项目</strong>
+    <p>先理解目录结构、数据模型和已经存在的能力。</p>
+  </div>
+  <div class="article-step">
+    <span class="article-step__number">02</span>
+    <strong>确认需求和约束</strong>
+    <p>明确功能范围、技术限制和最终验收标准。</p>
+  </div>
+  <div class="article-step">
+    <span class="article-step__number">03</span>
+    <strong>分析数据结构</strong>
+    <p>判断新功能会影响哪些模块和已有数据。</p>
+  </div>
+  <div class="article-step">
+    <span class="article-step__number">04</span>
+    <strong>制定并执行修改</strong>
+    <p>先形成方案，再修改代码，并保留必要的回退空间。</p>
+  </div>
+  <div class="article-step">
+    <span class="article-step__number">05</span>
+    <strong>运行构建</strong>
+    <p>确认项目可以正常编译，及时发现语法、依赖和配置错误。</p>
+    <span class="article-step__return">构建失败时返回修改 ↑</span>
+  </div>
+  <div class="article-step">
+    <span class="article-step__number">06</span>
+    <strong>检查主要交互</strong>
+    <p>验证新增能力，同时确认原有功能没有被破坏。</p>
+    <span class="article-step__return">回归失败时重新调整方案 ↑</span>
+  </div>
+  <div class="article-step">
+    <span class="article-step__number">07</span>
+    <strong>创建 Pull Request</strong>
+    <p>只有构建和交互验证通过后，任务才进入交付环节。</p>
+  </div>
+</div>
 
 这就是 Workflow 所关注的问题。
 
@@ -217,18 +252,24 @@ Workflow 和 Agent 并不是互相替代的关系。Workflow 提供执行骨架�
 
 不同问题需要不同的解决方式。
 
-```mermaid
-flowchart TD
-    A["Agent 结果不理想"] --> B{"任务是否说清楚"}
-    B -- "否" --> C["完善 Prompt"]
-    B -- "是" --> D{"是否反复执行同类任务"}
-    D -- "是" --> E["沉淀或调整 Skill"]
-    D -- "否" --> F{"是否缺少外部数据或操作能力"}
-    F -- "是" --> G["接入 MCP 或其他工具"]
-    F -- "否" --> H{"步骤之间是否缺少控制"}
-    H -- "是" --> I["设计 Workflow"]
-    H -- "否" --> J["检查模型判断和验收标准"]
-```
+<div class="article-diagnosis">
+  <div class="article-diagnosis__item">
+    <strong>结果偏离真实需求</strong>
+    <p>先检查 Prompt 是否说明了目标、约束、使用场景和验收条件。</p>
+  </div>
+  <div class="article-diagnosis__item">
+    <strong>每次都要重复相同说明</strong>
+    <p>考虑把稳定的规则、模板和方法沉淀成可以复用的 Skill。</p>
+  </div>
+  <div class="article-diagnosis__item">
+    <strong>只能给建议，不能实际操作</strong>
+    <p>检查是否缺少 MCP，或者文件、仓库、终端等外部工具连接。</p>
+  </div>
+  <div class="article-diagnosis__item">
+    <strong>修改完成后就直接结束</strong>
+    <p>补充 Workflow、构建验证、交互测试和必要的回归检查。</p>
+  </div>
+</div>
 
 如果 Agent 做出的产品和预期完全不同，问题可能在 Prompt。如果每次都需要重新解释相同的工程规范，问题可能在 Skill。如果模型只能告诉用户怎么改，却不能读取和修改真实项目，问题可能在工具或 MCP。如果模型改完代码就直接结束，没有构建、测试和回归检查，问题通常出在 Workflow 和验收标准。
 
