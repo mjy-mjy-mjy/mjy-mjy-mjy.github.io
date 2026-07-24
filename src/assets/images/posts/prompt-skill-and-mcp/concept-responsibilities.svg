@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+<title id="title">Prompt、Skill、MCP 和 Workflow 的职责分工</title>
+<desc id="desc">围绕浏览器端 ToDo 工具这一当前任务，展示四个概念各自承担的职责。</desc>
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#183153" flood-opacity=".10"/>
+  </filter>
+  <linearGradient id="center" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#f7fbff"/>
+    <stop offset="1" stop-color="#edf5ff"/>
+  </linearGradient>
+</defs>
+<rect width="1400" height="820" rx="34" fill="#f8fafc"/>
+<text x="700" y="72" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="34" font-weight="700" fill="#14213d">四个概念的职责分工</text>
+<text x="700" y="112" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="19" fill="#6b7890">它们不是替代关系，而是围绕同一个任务协同工作</text>
+<path d="M700 410 C520 410 450 260 355 260" fill="none" stroke="#9abcf5" stroke-width="4" stroke-dasharray="8 10"/>
+<path d="M700 410 C520 410 450 575 355 575" fill="none" stroke="#8bd4ca" stroke-width="4" stroke-dasharray="8 10"/>
+<path d="M700 410 C880 410 950 260 1045 260" fill="none" stroke="#86aef7" stroke-width="4" stroke-dasharray="8 10"/>
+<path d="M700 410 C880 410 950 575 1045 575" fill="none" stroke="#f6b17d" stroke-width="4" stroke-dasharray="8 10"/>
+<circle cx="700" cy="410" r="130" fill="url(#center)" stroke="#d6e4f7" stroke-width="3" filter="url(#shadow)"/>
+<circle cx="700" cy="350" r="35" fill="#18a6a2" opacity=".12"/>
+<rect x="683" y="332" width="34" height="38" rx="6" fill="none" stroke="#18a6a2" stroke-width="4"/>
+<path d="M691 342h18M691 352h18M691 362h12" stroke="#18a6a2" stroke-width="3" stroke-linecap="round"/>
+<text x="700" y="419" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="700" fill="#17233d">当前任务</text>
+<text x="700" y="457" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="600" fill="#334a72">构建浏览器端 ToDo 工具</text>
+<g filter="url(#shadow)">
+  <rect x="90" y="150" width="440" height="220" rx="26" fill="#ffffff" stroke="#d8c8ff" stroke-width="2"/>
+  <circle cx="155" cy="214" r="34" fill="#efe8ff"/>
+  <path d="M138 202h34a10 10 0 0 1 10 10v17a10 10 0 0 1-10 10h-14l-11 9v-9h-9a10 10 0 0 1-10-10v-17a10 10 0 0 1 10-10z" fill="none" stroke="#6541d8" stroke-width="4"/>
+  <text x="210" y="208" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#5632c6">Prompt</text>
+  <text x="210" y="244" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="600" fill="#263650">定义当前目标和边界</text>
+  <text x="132" y="300" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">• 说明要做什么</text>
+  <text x="132" y="332" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">• 给出约束条件与验收标准</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="90" y="465" width="440" height="220" rx="26" fill="#ffffff" stroke="#bfe8e2" stroke-width="2"/>
+  <circle cx="155" cy="529" r="34" fill="#e4f8f4"/>
+  <path d="M133 514q22-12 44 0v34q-22-12-44 0zM177 514q22-12 44 0v34q-22-12-44 0z" transform="translate(-22 0)" fill="none" stroke="#118e83" stroke-width="4"/>
+  <text x="210" y="523" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#0e847a">Skill</text>
+  <text x="210" y="559" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="600" fill="#263650">提供可以复用的方法</text>
+  <text x="132" y="615" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">• 沉淀规范、模板和经验</text>
+  <text x="132" y="647" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">• 减少每次任务中的重复说明</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="870" y="150" width="440" height="220" rx="26" fill="#ffffff" stroke="#bed4ff" stroke-width="2"/>
+  <circle cx="935" cy="214" r="34" fill="#e8f1ff"/>
+  <path d="M922 193l18 18-13 13-18-18zM946 217l18 18M954 209l12-12M963 218l12-12" fill="none" stroke="#245bbb" stroke-width="4" stroke-linecap="round"/>
+  <text x="990" y="208" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#245bbb">MCP / Tools</text>
+  <text x="990" y="244" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="600" fill="#263650">连接外部数据和能力</text>
+  <text x="912" y="300" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">• 读取和修改真实文件</text>
+  <text x="912" y="332" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">• 调用外部服务并执行操作</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="870" y="465" width="440" height="220" rx="26" fill="#ffffff" stroke="#ffd2b1" stroke-width="2"/>
+  <circle cx="935" cy="529" r="34" fill="#fff0e5"/>
+  <path d="M935 505v16M915 537h40M915 537v16M935 537v16M955 537v16" fill="none" stroke="#e86f24" stroke-width="4" stroke-linecap="round"/>
+  <rect x="906" y="553" width="18" height="12" rx="3" fill="none" stroke="#e86f24" stroke-width="3"/>
+  <rect x="926" y="553" width="18" height="12" rx="3" fill="none" stroke="#e86f24" stroke-width="3"/>
+  <rect x="946" y="553" width="18" height="12" rx="3" fill="none" stroke="#e86f24" stroke-width="3"/>
+  <text x="990" y="523" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#df6721">Workflow</text>
+  <text x="990" y="559" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="600" fill="#263650">组织任务的执行过程</text>
+  <text x="912" y="615" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">• 安排步骤、检查点和回退</text>
+  <text x="912" y="647" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">• 保证结果经过验证再交付</text>
+</g>
+<rect x="125" y="733" width="1150" height="52" rx="16" fill="#eef5ff"/>
+<text x="700" y="766" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" fill="#3f5577">清晰的 Prompt + 合适的 Skill + 可用的 MCP + 良好的 Workflow = 可验证的结果</text>
+</svg>
