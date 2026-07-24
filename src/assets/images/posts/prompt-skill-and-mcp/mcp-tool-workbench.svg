@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+<title id="title">Agent 的外部能力工作台</title>
+<desc id="desc">Agent 通过文件系统、GitHub、终端和浏览器测试工具进入真实项目。</desc>
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#183153" flood-opacity=".10"/>
+  </filter>
+  <radialGradient id="agent" cx="50%" cy="40%" r="70%">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#e9f3ff"/>
+  </radialGradient>
+</defs>
+<rect width="1400" height="820" rx="34" fill="#f8fafc"/>
+<text x="700" y="72" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="34" font-weight="700" fill="#14213d">Agent 的工作台：连接真实世界的能力</text>
+<text x="700" y="112" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="19" fill="#6b7890">MCP 或其他工具接口，让模型能够读取、操作并验证真实项目</text>
+<path d="M700 410 C530 410 500 240 430 240" fill="none" stroke="#6fc9bc" stroke-width="4" stroke-dasharray="8 10"/>
+<path d="M700 410 C870 410 900 240 970 240" fill="none" stroke="#9d86f7" stroke-width="4" stroke-dasharray="8 10"/>
+<path d="M700 410 C530 410 500 590 430 590" fill="none" stroke="#f4b65b" stroke-width="4" stroke-dasharray="8 10"/>
+<path d="M700 410 C870 410 900 590 970 590" fill="none" stroke="#6ea9f7" stroke-width="4" stroke-dasharray="8 10"/>
+<circle cx="700" cy="410" r="135" fill="url(#agent)" stroke="#d4e4f8" stroke-width="3" filter="url(#shadow)"/>
+<rect x="652" y="332" width="96" height="78" rx="28" fill="#ffffff" stroke="#3878d4" stroke-width="4"/>
+<rect x="670" y="350" width="60" height="40" rx="18" fill="#153d75"/>
+<circle cx="687" cy="370" r="6" fill="#75d6ff"/>
+<circle cx="713" cy="370" r="6" fill="#75d6ff"/>
+<path d="M700 332v-22M700 310h1" stroke="#3878d4" stroke-width="5" stroke-linecap="round"/>
+<path d="M652 367h-18M748 367h18" stroke="#3878d4" stroke-width="5" stroke-linecap="round"/>
+<text x="700" y="452" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#244d8b">Agent</text>
+<text x="700" y="485" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" fill="#526178">理解任务并选择下一步行动</text>
+<g filter="url(#shadow)">
+  <rect x="90" y="145" width="430" height="210" rx="26" fill="#ffffff" stroke="#bfe8e2" stroke-width="2"/>
+  <circle cx="155" cy="210" r="34" fill="#e5f8f4"/>
+  <path d="M133 198h23l8 8h20v25h-51z" fill="none" stroke="#15998c" stroke-width="4" stroke-linejoin="round"/>
+  <text x="210" y="204" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#12897f">文件系统</text>
+  <text x="210" y="238" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="600" fill="#263650">读取、搜索和修改代码</text>
+  <text x="132" y="292" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">打开文件 · 搜索内容 · 写入与重构</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="880" y="145" width="430" height="210" rx="26" fill="#ffffff" stroke="#d9ccff" stroke-width="2"/>
+  <circle cx="945" cy="210" r="34" fill="#eee9ff"/>
+  <circle cx="945" cy="210" r="18" fill="#30256d"/>
+  <path d="M937 223c-8 3-8-4-11-5M955 223c8 3 8-4 11-5M936 202c4-8 14-9 19-1 5 8 0 20-10 20s-15-11-9-19z" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <text x="1000" y="204" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#4d3ca5">GitHub</text>
+  <text x="1000" y="238" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="600" fill="#263650">管理仓库与协作流程</text>
+  <text x="922" y="292" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">创建分支 · 提交代码 · 发起 Pull Request</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="90" y="500" width="430" height="210" rx="26" fill="#ffffff" stroke="#f7d49b" stroke-width="2"/>
+  <circle cx="155" cy="565" r="34" fill="#fff3dd"/>
+  <rect x="132" y="543" width="46" height="38" rx="7" fill="#263650"/>
+  <path d="M142 555l8 7-8 7M156 570h11" fill="none" stroke="#ffd77b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="210" y="559" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#bc7615">终端与构建工具</text>
+  <text x="210" y="593" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="600" fill="#263650">执行命令与自动化任务</text>
+  <text x="132" y="647" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">安装依赖 · 运行构建 · 执行测试</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="880" y="500" width="430" height="210" rx="26" fill="#ffffff" stroke="#bed8ff" stroke-width="2"/>
+  <circle cx="945" cy="565" r="34" fill="#e8f2ff"/>
+  <circle cx="945" cy="565" r="20" fill="none" stroke="#2b78d6" stroke-width="4"/>
+  <path d="M925 565h40M945 545c8 8 8 32 0 40M945 545c-8 8-8 32 0 40" fill="none" stroke="#2b78d6" stroke-width="3"/>
+  <text x="1000" y="559" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#236fc4">浏览器与测试工具</text>
+  <text x="1000" y="593" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="600" fill="#263650">检查页面与交互行为</text>
+  <text x="922" y="647" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#526178">打开页面 · 执行操作 · 验证最终结果</text>
+</g>
+<rect x="145" y="751" width="1110" height="44" rx="14" fill="#eef5ff"/>
+<text x="700" y="779" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" fill="#3f5577">这些能力让 Agent 不只会“给建议”，而是真的能够“动手做事”</text>
+</svg>
