@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="790" viewBox="0 0 1400 790" role="img" aria-labelledby="title desc">
+<title id="title">一个可复用 Skill 的四层结构</title>
+<desc id="desc">从入口说明、长期规范、结构骨架到可执行校验，四层内容依次减少对模型临场理解的依赖。</desc>
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#183153" flood-opacity=".10"/>
+  </filter>
+  <linearGradient id="axis" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#c3b4f2"/>
+    <stop offset="1" stop-color="#e9a469"/>
+  </linearGradient>
+</defs>
+<rect width="1400" height="790" rx="34" fill="#f8fafc"/>
+<text x="700" y="70" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="34" font-weight="700" fill="#14213d">一个可复用 Skill 的四层结构</text>
+<text x="700" y="110" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="19" fill="#6b7890">越往下，越不依赖模型每一次的临场理解</text>
+
+<rect x="82" y="180" width="14" height="540" rx="7" fill="url(#axis)"/>
+<text x="60" y="196" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#7b6bb5" transform="rotate(-90 60 196)" dominant-baseline="middle">靠理解</text>
+<text x="60" y="700" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#b5763a" transform="rotate(-90 60 700)" dominant-baseline="middle">靠执行</text>
+
+<g filter="url(#shadow)">
+  <rect x="150" y="170" width="1170" height="120" rx="22" fill="#ffffff" stroke="#d8c8ff" stroke-width="2"/>
+  <circle cx="212" cy="230" r="32" fill="#efe8ff"/>
+  <path d="M198 214h28v32h-28z" fill="none" stroke="#6541d8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M205 224h14M205 234h10" stroke="#6541d8" stroke-width="3" stroke-linecap="round"/>
+  <text x="266" y="222" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#5632c6">SKILL.md　入口与模式</text>
+  <text x="266" y="257" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" fill="#526178">说明什么时候该调用，以及选题、初稿、预览、发布分别做到哪一步</text>
+  <rect x="1010" y="208" width="272" height="44" rx="22" fill="#f3eeff"/>
+  <text x="1146" y="236" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="600" fill="#5632c6">每次调用都会读</text>
+</g>
+
+<g filter="url(#shadow)">
+  <rect x="150" y="310" width="1170" height="120" rx="22" fill="#ffffff" stroke="#bfe8e2" stroke-width="2"/>
+  <circle cx="212" cy="370" r="32" fill="#e4f8f4"/>
+  <path d="M197 355h30v30h-30z" fill="none" stroke="#0e847a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M197 365h30M212 355v30" stroke="#0e847a" stroke-width="3"/>
+  <text x="266" y="362" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#0e847a">references　长期规范</text>
+  <text x="266" y="397" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" fill="#526178">写作风格、视觉标准、发布规则、安全边界，以及每次任务留下的复盘</text>
+  <rect x="1010" y="348" width="272" height="44" rx="22" fill="#e8f7f4"/>
+  <text x="1146" y="376" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="600" fill="#0e847a">只写可复用的部分</text>
+</g>
+
+<g filter="url(#shadow)">
+  <rect x="150" y="450" width="1170" height="120" rx="22" fill="#ffffff" stroke="#c9dcfb" stroke-width="2"/>
+  <circle cx="212" cy="510" r="32" fill="#e8f1ff"/>
+  <path d="M198 494h28v34h-28z" fill="none" stroke="#2c5fd0" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M198 506h28" stroke="#2c5fd0" stroke-width="3"/>
+  <text x="266" y="502" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#2c5fd0">templates　结构骨架</text>
+  <text x="266" y="537" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" fill="#526178">文章模板、Pull Request 模板、可以离线打开的预览外壳</text>
+  <rect x="1010" y="488" width="272" height="44" rx="22" fill="#eaf2ff"/>
+  <text x="1146" y="516" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="600" fill="#2c5fd0">省掉重复的格式劳动</text>
+</g>
+
+<g filter="url(#shadow)">
+  <rect x="150" y="590" width="1170" height="120" rx="22" fill="#ffffff" stroke="#f3d5b6" stroke-width="2"/>
+  <circle cx="212" cy="650" r="32" fill="#fdf0e2"/>
+  <path d="M198 650l10 11 20-22" fill="none" stroke="#c2691f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="266" y="642" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#c2691f">scripts　可执行校验</text>
+  <text x="266" y="677" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" fill="#526178">检查 Front Matter、图片路径、重复链接，最后交给构建给出结论</text>
+  <rect x="1010" y="628" width="272" height="44" rx="22" fill="#fdf1e5"/>
+  <text x="1146" y="656" text-anchor="middle" font-family="Inter,Segoe UI,PingFang SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="600" fill="#c2691f">不依赖模型自觉</text>
+</g>
+</svg>
