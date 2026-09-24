@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="950" viewBox="0 0 840 950" role="img" aria-labelledby="title desc"><title id="title">BERT、生成式 LLM 与 Jev 的典型用法</title><desc id="desc">对比三种使用方式，不表示架构继承：BERT 任务分类器用文本表示和任务层分类；LLM 根据指令生成文本或受约束 JSON；Jev 根据上下文与类型化问题输出判断和概率。</desc><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#648477"/></marker></defs><rect width="840" height="950" rx="24" fill="#f3f6f0"/><g font-family="'Noto Sans CJK SC','Microsoft YaHei','PingFang SC',sans-serif" fill="#193f38">
+<text x="40" y="53" font-size="20" fill="#193f38" font-weight="700" text-anchor="start">01 / MODEL APPROACHES</text>
+<text x="40" y="101" font-size="34" fill="#193f38" font-weight="700" text-anchor="start">都能做分类，交付方式有所不同</text>
+<text x="40" y="142" font-size="25" fill="#61766c" font-weight="400" text-anchor="start">典型用法对比 · 不代表内部架构谱系</text>
+<rect x="40" y="180" width="760" height="218" rx="16" fill="#fffefa" stroke="#cfdbcf"/>
+<rect x="60" y="198" width="720" height="46" rx="8" fill="#e2ebf6" stroke="#e2ebf6"/>
+<text x="80" y="230" font-size="28" fill="#193f38" font-weight="700" text-anchor="start">BERT 任务分类器</text>
+<rect x="60" y="264" width="205" height="70" rx="9" fill="#f4f6f0" stroke="#cfdbcf"/>
+<rect x="317" y="264" width="205" height="70" rx="9" fill="#f4f6f0" stroke="#cfdbcf"/>
+<rect x="575" y="264" width="205" height="70" rx="9" fill="#f4f6f0" stroke="#cfdbcf"/>
+<text x="162" y="305" font-size="24" fill="#193f38" font-weight="400" text-anchor="middle">文本</text>
+<text x="419" y="292" font-size="23" fill="#193f38" font-weight="700" text-anchor="middle">双向表示</text>
+<text x="419" y="320" font-size="21" fill="#61766c" font-weight="400" text-anchor="middle">任务输出层</text>
+<text x="677" y="305" font-size="24" fill="#193f38" font-weight="400" text-anchor="middle">标签 / 概率</text>
+<path d="M270 300H308" fill="none" stroke="#648477" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M527 300H566" fill="none" stroke="#648477" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="62" y="370" font-size="23" fill="#61766c" font-weight="400" text-anchor="start">常见做法：围绕任务数据微调；并非唯一用法</text>
+<rect x="40" y="420" width="760" height="218" rx="16" fill="#fffefa" stroke="#cfdbcf"/>
+<rect x="60" y="438" width="720" height="46" rx="8" fill="#f5ead8" stroke="#f5ead8"/>
+<text x="80" y="470" font-size="28" fill="#193f38" font-weight="700" text-anchor="start">生成式 LLM</text>
+<rect x="60" y="504" width="205" height="70" rx="9" fill="#f4f6f0" stroke="#cfdbcf"/>
+<rect x="317" y="504" width="205" height="70" rx="9" fill="#f4f6f0" stroke="#cfdbcf"/>
+<rect x="575" y="504" width="205" height="70" rx="9" fill="#f4f6f0" stroke="#cfdbcf"/>
+<text x="162" y="545" font-size="24" fill="#193f38" font-weight="400" text-anchor="middle">上下文 + 指令</text>
+<text x="419" y="532" font-size="23" fill="#193f38" font-weight="700" text-anchor="middle">逐 token 生成</text>
+<text x="419" y="560" font-size="21" fill="#61766c" font-weight="400" text-anchor="middle">可约束输出结构</text>
+<text x="677" y="545" font-size="24" fill="#193f38" font-weight="400" text-anchor="middle">文本 / JSON</text>
+<path d="M270 540H308" fill="none" stroke="#648477" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M527 540H566" fill="none" stroke="#648477" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="62" y="610" font-size="23" fill="#61766c" font-weight="400" text-anchor="start">保留开放式生成能力，也能做分类和评分</text>
+<rect x="40" y="660" width="760" height="218" rx="16" fill="#fffefa" stroke="#cfdbcf"/>
+<rect x="60" y="678" width="720" height="46" rx="8" fill="#d9ebe0" stroke="#d9ebe0"/>
+<text x="80" y="710" font-size="28" fill="#193f38" font-weight="700" text-anchor="start">Jev</text>
+<rect x="60" y="744" width="205" height="70" rx="9" fill="#f4f6f0" stroke="#cfdbcf"/>
+<rect x="317" y="744" width="205" height="70" rx="9" fill="#f4f6f0" stroke="#cfdbcf"/>
+<rect x="575" y="744" width="205" height="70" rx="9" fill="#f4f6f0" stroke="#cfdbcf"/>
+<text x="162" y="785" font-size="24" fill="#193f38" font-weight="400" text-anchor="middle">上下文 + 问题</text>
+<text x="419" y="772" font-size="23" fill="#193f38" font-weight="700" text-anchor="middle">类型化判断接口</text>
+<text x="419" y="800" font-size="21" fill="#61766c" font-weight="400" text-anchor="middle">内部架构未确认</text>
+<text x="677" y="785" font-size="24" fill="#193f38" font-weight="400" text-anchor="middle">判断 / 概率</text>
+<path d="M270 780H308" fill="none" stroke="#648477" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M527 780H566" fill="none" stroke="#648477" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="62" y="850" font-size="23" fill="#61766c" font-weight="400" text-anchor="start">通过问题与候选项配置任务，效果仍需验证</text>
+<text x="40" y="921" font-size="24" fill="#193f38" font-weight="400" text-anchor="start">分类与概率并非 Jev 首创；具体收益要与已有方案对照。</text>
+</g></svg>
