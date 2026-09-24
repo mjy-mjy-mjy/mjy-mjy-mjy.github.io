@@ -1,0 +1,67 @@
+/*
+ * Blog frontend improvement layer
+ * Focus: personal technical blog identity, reading experience, and content hierarchy.
+ */
+
+/* Homepage: less landing page, more author blog */
+.home-hero__intro {
+  max-width: 640px;
+  line-height: 1.9;
+}
+
+.home-profile-card {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Article cards: knowledge base feeling */
+.article-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(20, 35, 55, .05);
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(20, 35, 55, .1);
+}
+
+.article-card__meta {
+  letter-spacing: .03em;
+}
+
+/* Long-form article reading */
+.post-content {
+  max-width: min(760px, calc(100vw - 48px));
+  margin-inline: auto;
+  line-height: 1.95;
+}
+
+.post-content p {
+  margin-bottom: 1.35em;
+}
+
+.post-content h2,
+.post-content h3 {
+  scroll-margin-top: 90px;
+}
+
+.post-content code {
+  font-size: .92em;
+}
+
+/* About page */
+.about-content {
+  max-width: 760px;
+}
+
+.about-content p {
+  line-height: 1.95;
+}
+
+/* Mobile reading */
+@media (max-width: 760px) {
+  .post-content {
+    max-width: calc(100vw - 32px);
+    line-height: 1.85;
+  }
+}
