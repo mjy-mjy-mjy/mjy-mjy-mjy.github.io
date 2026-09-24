@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="790" viewBox="0 0 840 790" role="img" aria-labelledby="title desc"><title id="title">概率校准看一组预测，不保证某一次正确</title><desc id="desc">假想示例：100 次都预测某事件发生概率为 0.8，校准良好时应在其中约 80 次发生。图中 80 个实心点代表发生，20 个空心点代表未发生。并非 Jev 实测数据；confidence 不等于答对概率。</desc><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#648477"/></marker></defs><rect width="840" height="790" rx="24" fill="#f3f6f0"/><g font-family="'Noto Sans CJK SC','Microsoft YaHei','PingFang SC',sans-serif" fill="#193f38">
+<text x="40" y="53" font-size="20" fill="#193f38" font-weight="700" text-anchor="start">02 / CALIBRATION</text>
+<text x="40" y="104" font-size="34" fill="#193f38" font-weight="700" text-anchor="start">0.8，要放在一组预测里理解</text>
+<text x="40" y="147" font-size="26" fill="#61766c" font-weight="400" text-anchor="start">假设 100 次预测都给某事件 0.8 的发生概率</text>
+<rect x="40" y="184" width="760" height="390" rx="16" fill="#fffefa" stroke="#cfdbcf"/>
+<circle cx="79" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="109" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="139" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="169" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="199" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="229" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="259" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="289" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="319" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="349" cy="226" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="79" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="109" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="139" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="169" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="199" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="229" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="259" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="289" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="319" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="349" cy="259" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="79" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="109" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="139" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="169" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="199" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="229" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="259" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="289" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="319" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="349" cy="292" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="79" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="109" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="139" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="169" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="199" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="229" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="259" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="289" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="319" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="349" cy="325" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="79" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="109" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="139" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="169" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="199" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="229" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="259" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="289" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="319" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="349" cy="358" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="79" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="109" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="139" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="169" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="199" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="229" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="259" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="289" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="319" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="349" cy="391" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="79" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="109" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="139" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="169" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="199" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="229" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="259" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="289" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="319" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="349" cy="424" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="79" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="109" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="139" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="169" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="199" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="229" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="259" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="289" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="319" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="349" cy="457" r="10" fill="#28694f" stroke="#28694f" stroke-width="2"/>
+<circle cx="79" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="109" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="139" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="169" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="199" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="229" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="259" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="289" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="319" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="349" cy="490" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="79" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="109" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="139" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="169" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="199" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="229" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="259" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="289" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="319" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<circle cx="349" cy="523" r="10" fill="#fffefa" stroke="#9aab9d" stroke-width="2"/>
+<text x="443" y="269" font-size="46" fill="#193f38" font-weight="700" text-anchor="start">约 80 次</text>
+<text x="445" y="316" font-size="28" fill="#193f38" font-weight="400" text-anchor="start">事件实际发生</text>
+<text x="445" y="399" font-size="35" fill="#67786d" font-weight="700" text-anchor="start">约 20 次</text>
+<text x="445" y="443" font-size="28" fill="#67786d" font-weight="400" text-anchor="start">事件未发生</text>
+<text x="60" y="551" font-size="24" fill="#61766c" font-weight="400" text-anchor="start">● 发生     ○ 未发生</text>
+<rect x="40" y="603" width="760" height="130" rx="16" fill="#e5ece1" stroke="#cfdbcf"/>
+<text x="62" y="644" font-size="30" fill="#193f38" font-weight="700" text-anchor="start">概率校准 ≠ 单次结果保证</text>
+<text x="62" y="685" font-size="26" fill="#193f38" font-weight="400" text-anchor="start">confidence 也不能直接当作“答对概率”。</text>
+<text x="40" y="767" font-size="23" fill="#61766c" font-weight="400" text-anchor="start">假想示例，非实测；有限样本会波动，需按任务检验。</text>
+</g></svg>
