@@ -1,0 +1,67 @@
+/* Blog polish layer: improve reading focus and personal knowledge-base feel */
+
+:root {
+  --reading-width: min(760px, calc(100vw - 48px));
+}
+
+/* Reduce landing-page feeling, emphasize author/blog identity */
+.home-hero__intro {
+  max-width: 620px;
+}
+
+.home-hero__content .eyebrow {
+  letter-spacing: .22em;
+}
+
+/* Article list: softer boundaries */
+.article-card {
+  border-radius: 14px;
+  box-shadow: none;
+}
+
+.article-card:hover {
+  box-shadow: 0 12px 36px rgba(20, 35, 55, .08);
+}
+
+/* Long-form reading */
+.post-content {
+  max-width: var(--reading-width);
+  margin-inline: auto;
+  font-size: 1.06rem;
+  line-height: 1.95;
+}
+
+.post-content p {
+  letter-spacing: .01em;
+}
+
+.post-content h2,
+.post-content h3 {
+  scroll-margin-top: 100px;
+}
+
+.post-summary {
+  font-size: 1.02rem;
+}
+
+/* Metadata hierarchy */
+.post-meta,
+.article-card__meta {
+  letter-spacing: .02em;
+}
+
+/* About page personality */
+.about-content {
+  max-width: 760px;
+}
+
+.about-content p {
+  line-height: 1.95;
+}
+
+@media (max-width: 760px) {
+  .post-content {
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+}
